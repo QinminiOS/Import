@@ -12,8 +12,8 @@ Xcode extension for adding imports from anywhere in the code.
 
 
 ### Requirements
-Xcode 8+
-OSX 10.11+
+- Xcode 8+
+- OSX 10.11+
 
 ### Supported languages
 - Swift
