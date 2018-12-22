@@ -1,38 +1,19 @@
-# Import ☝️
+### Intro
+
+The project fork from [Import ☝️](https://github.com/markohlebar/Import)
+
 Xcode extension for adding imports from anywhere in the code. 
 
-Now available on [App Store](https://itunes.apple.com/ie/app/import/id1167060791?mt=12)
-
+### Feature
 ![usage.gif](/Resources/usage.gif)
 
-### Why? 
-Because sometimes you are on 300th line of code and scrolling up just to add an import is a waste of time. 
-This was built to replace [Peckham](https://github.com/markohlebar/Peckham), as  decided to drop support for Xcode plugins in Xcode 8. 
+### Added Feature
+![usage.gif](/Resources/2.gif)
 
-### Installation Guide (Xcode 8 / OSX 10.11+)
 
-- get it on [App Store](https://itunes.apple.com/ie/app/import/id1167060791?mt=12)
-
-OR
-
-- close Xcode
-- (*OSX 10.11 only*) `sudo /usr/libexec/xpccachectl`
-- download the [Import app](https://github.com/markohlebar/Import/releases/download/1.0.7/Import.zip)
-- unzip and copy to Applications folder
-- run (right click + open)
-- (*optional*) click on **Install Key Bindings** to install `⌘ + ctrl + P` binding
-- ` -> System Preferences... -> Extensions -> All -> Enable Import`
-- open Xcode
-- select a source file
-- check if `Editor -> Import -> ☝️` is there 
-- WIN
-
-### Usage
-
-Import uses Xcode's autocomplete, this works best when written inside a function / a method
-
-- type: `import MODULE_NAME` (`#import "HEADER_NAME.h"` in Obj-C) as you normally would
-- press `⌘ + ctrl + P` or alternatively `Editor -> Import -> ☝️`
+### Requirements
+Xcode 8+
+OSX 10.11+
 
 ### Supported languages
 - Swift
@@ -43,3 +24,5 @@ Import uses Xcode's autocomplete, this works best when written inside a function
 ### License
 
 MIT, see LICENSE
+
+
