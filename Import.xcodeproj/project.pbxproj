@@ -26,6 +26,7 @@
 		96E7A0F91DA4EC3E0069F088 /* KeyBindingsInserter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E7A0F81DA4EC3E0069F088 /* KeyBindingsInserter.swift */; };
 		96F9FF611DEEC929009A0AE6 /* Sandboxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F9FF601DEEC929009A0AE6 /* Sandboxing.swift */; };
 		96F9FF631DEED081009A0AE6 /* RootWindowController_Sandbox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F9FF621DEED081009A0AE6 /* RootWindowController_Sandbox.xib */; };
+		B9096DFF21CDD800004B5625 /* SelectSourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9096DFD21CDD800004B5625 /* SelectSourceEditorCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,6 @@
 
 /* Begin PBXFileReference section */
 		591C66161DC6477200FD0FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		59CB44F21DD6270F001B7678 /* Import.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Import.entitlements; sourceTree = "<group>"; };
 		961F64411DB67A6F00F7E05A /* open_system_preferences.scpt */ = {isa = PBXFileReference; lastKnownFileType = text; path = open_system_preferences.scpt; sourceTree = "<group>"; };
 		9624F5401DA43C9B005B57F4 /* Import Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Import Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9624F5431DA43C9B005B57F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		96E7A0F81DA4EC3E0069F088 /* KeyBindingsInserter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyBindingsInserter.swift; path = Controller/KeyBindingsInserter.swift; sourceTree = "<group>"; };
 		96F9FF601DEEC929009A0AE6 /* Sandboxing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sandboxing.swift; path = Functions/Sandboxing.swift; sourceTree = "<group>"; };
 		96F9FF621DEED081009A0AE6 /* RootWindowController_Sandbox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootWindowController_Sandbox.xib; path = Windows/RootWindowController_Sandbox.xib; sourceTree = "<group>"; };
+		B9096DFD21CDD800004B5625 /* SelectSourceEditorCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectSourceEditorCommand.swift; sourceTree = "<group>"; };
+		B920791621CDE51500990830 /* Import Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Import Debug.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +140,7 @@
 		9624F5421DA43C9B005B57F4 /* Import */ = {
 			isa = PBXGroup;
 			children = (
-				59CB44F21DD6270F001B7678 /* Import.entitlements */,
+				B920791621CDE51500990830 /* Import Debug.entitlements */,
 				965BF2701DA4F3DF00A43900 /* Resources */,
 				96F9FF5F1DEEC8E3009A0AE6 /* Sandboxing */,
 				96E7A0FA1DA4EC420069F088 /* Controller */,
@@ -172,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				9624F5691DA43CBD005B57F4 /* SourceEditorExtension.swift */,
-				9624F56B1DA43CBD005B57F4 /* SourceEditorCommand.swift */,
-				96BFA7D61DA4B9CE005B37E2 /* AddImportOperation.swift */,
+				B9096DFB21CDD747004B5625 /* AddImport */,
+				B9096DFA21CDD73B004B5625 /* AutoImport */,
 				9624F56D1DA43CBD005B57F4 /* Info.plist */,
 				9624F5671DA43CBD005B57F4 /* Supporting Files */,
 			);
@@ -224,6 +226,23 @@
 				96F9FF601DEEC929009A0AE6 /* Sandboxing.swift */,
 			);
 			name = Sandboxing;
+			sourceTree = "<group>";
+		};
+		B9096DFA21CDD73B004B5625 /* AutoImport */ = {
+			isa = PBXGroup;
+			children = (
+				B9096DFD21CDD800004B5625 /* SelectSourceEditorCommand.swift */,
+			);
+			name = AutoImport;
+			sourceTree = "<group>";
+		};
+		B9096DFB21CDD747004B5625 /* AddImport */ = {
+			isa = PBXGroup;
+			children = (
+				9624F56B1DA43CBD005B57F4 /* SourceEditorCommand.swift */,
+				96BFA7D61DA4B9CE005B37E2 /* AddImportOperation.swift */,
+			);
+			name = AddImport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +314,7 @@
 				TargetAttributes = {
 					9624F53F1DA43C9B005B57F4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7LN5U2P4GE;
+						DevelopmentTeam = SP96U9X4RF;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -306,14 +325,14 @@
 					};
 					9624F54E1DA43C9B005B57F4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7LN5U2P4GE;
+						DevelopmentTeam = SP96U9X4RF;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9624F53F1DA43C9B005B57F4;
 					};
 					9624F5611DA43CBD005B57F4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7LN5U2P4GE;
+						DevelopmentTeam = SP96U9X4RF;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -397,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BFA7D71DA4B9CE005B37E2 /* AddImportOperation.swift in Sources */,
+				B9096DFF21CDD800004B5625 /* SelectSourceEditorCommand.swift in Sources */,
 				9624F56A1DA43CBD005B57F4 /* SourceEditorExtension.swift in Sources */,
 				9624F56C1DA43CBD005B57F4 /* SourceEditorCommand.swift in Sources */,
 			);
@@ -542,9 +562,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Import/Import Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = Import/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -560,10 +581,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = "Import/Import Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = Import/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -580,7 +601,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = ImportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squid.ImportTests;
@@ -597,7 +618,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = ImportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squid.ImportTests;
@@ -614,7 +635,7 @@
 				CODE_SIGN_ENTITLEMENTS = ImportExtension/ImportExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = ImportExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -632,7 +653,7 @@
 				CODE_SIGN_ENTITLEMENTS = ImportExtension/ImportExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = ImportExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -699,10 +720,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Import/Import.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Import/Import Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = Import/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -719,7 +740,7 @@
 				CODE_SIGN_ENTITLEMENTS = ImportExtension/ImportExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = ImportExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -737,7 +758,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = ImportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squid.ImportTests;
@@ -811,10 +832,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Import/Import.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Import/Import Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				DISPLAY_NAME_SUFFIX = " Debug AppStore";
 				IDENTIFIER_SUFFIX = .debug.appstore;
 				INFOPLIST_FILE = Import/Info.plist;
@@ -833,7 +854,7 @@
 				CODE_SIGN_ENTITLEMENTS = ImportExtension/ImportExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				IDENTIFIER_SUFFIX = .debug.appstore;
 				INFOPLIST_FILE = ImportExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -852,7 +873,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7LN5U2P4GE;
+				DEVELOPMENT_TEAM = SP96U9X4RF;
 				INFOPLIST_FILE = ImportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squid.ImportTests;

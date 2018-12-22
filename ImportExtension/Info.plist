@@ -36,7 +36,15 @@
 					<key>XCSourceEditorCommandIdentifier</key>
 					<string>$(PRODUCT_BUNDLE_IDENTIFIER).Command</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>☝️$(DISPLAY_NAME_SUFFIX)</string>
+					<string>☝️Import</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SelectSourceEditorCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).SelectSourceEditorCommand</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>👌AutoImport</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
