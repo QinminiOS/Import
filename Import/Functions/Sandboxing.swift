@@ -44,7 +44,7 @@ public struct Sandboxing {
 
     public static func userHomePath() -> String {
         let usersHomePath = getpwuid(getuid()).pointee.pw_dir
-        let usersHomePathString : String = FileManager.default.string(withFileSystemRepresentation: usersHomePath!, length: Int(strlen(usersHomePath)))
+        let usersHomePathString : String = FileManager.default.string(withFileSystemRepresentation: usersHomePath!, length: Int(strlen(usersHomePath!)))
         return usersHomePathString
     }
 }

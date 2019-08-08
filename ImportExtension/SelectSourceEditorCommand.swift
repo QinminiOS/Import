@@ -100,8 +100,8 @@ class SelectSourceEditorCommand: NSObject, XCSourceEditorCommand
     }
     
     func isOcSource(invocation : XCSourceEditorCommandInvocation) -> Bool
-    {
-        return invocation.buffer.contentUTI.contains("objective-c-source")
+    {   
+        return !(invocation.buffer.contentUTI == "public.swift-source")
     }
     
     func lineForEmptyImportLine(lines:[String],

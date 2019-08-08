@@ -314,7 +314,7 @@
 				TargetAttributes = {
 					9624F53F1DA43C9B005B57F4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SP96U9X4RF;
+						DevelopmentTeam = PJWNDP9BL2;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -325,14 +325,14 @@
 					};
 					9624F54E1DA43C9B005B57F4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SP96U9X4RF;
+						DevelopmentTeam = PJWNDP9BL2;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9624F53F1DA43C9B005B57F4;
 					};
 					9624F5611DA43CBD005B57F4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SP96U9X4RF;
+						DevelopmentTeam = PJWNDP9BL2;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -343,6 +343,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -565,7 +566,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Import/Import Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = Import/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -584,7 +585,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Import/Import Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = Import/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -601,7 +602,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = ImportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squid.ImportTests;
@@ -618,7 +619,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = ImportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squid.ImportTests;
@@ -635,7 +636,7 @@
 				CODE_SIGN_ENTITLEMENTS = ImportExtension/ImportExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = ImportExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -653,7 +654,7 @@
 				CODE_SIGN_ENTITLEMENTS = ImportExtension/ImportExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = ImportExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -723,7 +724,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Import/Import Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = Import/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -740,7 +741,7 @@
 				CODE_SIGN_ENTITLEMENTS = ImportExtension/ImportExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = ImportExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -758,7 +759,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = ImportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squid.ImportTests;
@@ -835,7 +836,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Import/Import Debug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				DISPLAY_NAME_SUFFIX = " Debug AppStore";
 				IDENTIFIER_SUFFIX = .debug.appstore;
 				INFOPLIST_FILE = Import/Info.plist;
@@ -854,7 +855,7 @@
 				CODE_SIGN_ENTITLEMENTS = ImportExtension/ImportExtension.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				IDENTIFIER_SUFFIX = .debug.appstore;
 				INFOPLIST_FILE = ImportExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
@@ -873,7 +874,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = SP96U9X4RF;
+				DEVELOPMENT_TEAM = PJWNDP9BL2;
 				INFOPLIST_FILE = ImportTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.squid.ImportTests;
